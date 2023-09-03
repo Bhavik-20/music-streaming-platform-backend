@@ -66,7 +66,9 @@ const adminRoutes = require('./routes/admin');
 const userInfoRoutes = require('./routes/user-info');
 const songRoutes = require('./routes/songs');
 const albumRoutes = require('./routes/albums');
+const welcomeRoutes = require('./routes/welcome');
 
+app.use("/", welcomeRoutes);
 app.use("/auth", authRoutes);
 app.use("/profile", profileRoutes);
 app.use("/admin", adminRoutes);
