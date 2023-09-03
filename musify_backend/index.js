@@ -56,11 +56,7 @@ app.use(cors({
 }));
 
 if (process.env.NODE_ENV !== "development") {
-  sessionOptions.proxy = true;
-  sessionOptions.cookie = {
-    sameSite: "none",
-    secure: true,
-  };
+  
 }
 
 const port = 8000;
